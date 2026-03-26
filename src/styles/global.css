@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --accent-cyan: #00f5ff;
+  --accent-purple: #a855f7;
+  --accent-green: #22c55e;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+}
+
+html { scroll-behavior: smooth; }
+body { background-color: var(--bg-primary); color: var(--text-primary); font-family: 'Inter', sans-serif; }
+code, pre, .mono { font-family: 'JetBrains Mono', monospace; }
+
+.glow { text-shadow: 0 0 10px var(--accent-cyan), 0 0 40px rgba(0, 245, 255, 0.3); }
+
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+.cursor-blink::after { content: '▊'; animation: blink 1s infinite; color: var(--accent-cyan); }
+
+.grid-bg {
+  background-image: linear-gradient(rgba(0,245,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,245,255,0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--accent-cyan); border-radius: 3px; }
