@@ -91,6 +91,40 @@ import Layout from '../layouts/Layout.astro';
       <h2 class="text-2xl font-bold text-slate-100 mb-8">Some things I've built</h2>
       <div class="space-y-12">
 
+        <!-- total-recall -->
+        <div class="group">
+          <div class="flex items-baseline gap-3 mb-2">
+            <h3 class="text-lg font-semibold text-slate-200 group-hover:text-orange-400 transition">Total Recall</h3>
+            <a href="https://github.com/bcornish1797/total-recall" target="_blank" class="text-slate-600 hover:text-slate-400 text-xs">github</a>
+          </div>
+          <p class="text-slate-400 text-sm mb-3 max-w-2xl">
+            Zero-config persistent memory system for Claude Code. Hooks into session lifecycle to automatically capture decisions, constraints, and context into a LanceDB vector store — so nothing gets lost between conversations. Includes semantic search, conflict detection, tiered protection (pinned memories can't be auto-modified), and multiple view generators. 261+ memories indexed across real production use.
+          </p>
+          <div class="flex gap-2 flex-wrap text-xs text-slate-500">
+            <span>JavaScript</span><span class="text-slate-700">/</span>
+            <span>LanceDB</span><span class="text-slate-700">/</span>
+            <span>Vector Search</span><span class="text-slate-700">/</span>
+            <span>Claude Code</span>
+          </div>
+        </div>
+
+        <!-- cal.com -->
+        <div class="group">
+          <div class="flex items-baseline gap-3 mb-2">
+            <h3 class="text-lg font-semibold text-slate-200 group-hover:text-blue-400 transition">cal.com — guest availability for reschedules</h3>
+            <a href="https://github.com/calcom/cal.com/pull/28636" target="_blank" class="text-slate-600 hover:text-slate-400 text-xs">PR #28636</a>
+          </div>
+          <p class="text-slate-400 text-sm mb-3 max-w-2xl">
+            When a host reschedules a group booking on Cal.com, guests' busy times weren't considered — so you could accidentally double-book them. I added guest availability checking to the slots API, with proper gating so it only applies to host-initiated reschedules. Includes full tRPC schema changes, frontend hook plumbing, and 30+ tests covering edge cases.
+          </p>
+          <div class="flex gap-2 flex-wrap text-xs text-slate-500">
+            <span>TypeScript</span><span class="text-slate-700">/</span>
+            <span>Next.js</span><span class="text-slate-700">/</span>
+            <span>tRPC</span><span class="text-slate-700">/</span>
+            <span>Prisma</span>
+          </div>
+        </div>
+
         <!-- mcp-shield -->
         <div class="group">
           <div class="flex items-baseline gap-3 mb-2">
